@@ -1,8 +1,7 @@
-class Bar < Foo
+class FooBar
   attr_accessor :bars  
   def initialize(*args)
     super
-    self.name = 'barish'
     self.bars = [Bar.new, Foo.new]
   end
   
