@@ -3,7 +3,5 @@ class Bar < Foo
   def initialize(*args)
     super
     self.name = 'barish'
-    self.bars = [Bar.new, Foo.new]
   end
-  
 end

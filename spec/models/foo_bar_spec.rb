@@ -16,6 +16,10 @@ describe FooBar do
     it { @test_object.bars.should be_include(@bar_mock) }
   end
   describe 'situation 2' do
+    before do
+      @test_object = FooBar.new
+    end
+    it { @test_object.bars_bar.name.should == 'barish' }
     it { Bar.new.name.should == 'barish' }
   end
 end
